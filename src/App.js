@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 // Initialize the generative model
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI("AIzaSyD0B-CjCwj_m65Ow22AIEX2GQgsXTFK_Ec");
+const genAI = new GoogleGenerativeAI("%YOUR-API-KEY-HERE%");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Construct the prompt
