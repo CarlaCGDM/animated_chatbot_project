@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden
+}
+
+.App {
+  text-align: center;
+  font-family: 'Inria Sans';
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Background-image {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100vw;
+  filter: grayscale(50%);
+  opacity: 70%;
+  z-index: -1000;
+  background-color: black;
+}
+
+.Version-info {
+  width: 100%;
+  text-align: right;
+  padding: 1vw;
+  font-size: calc(5px + 1vw);
+  color: rgb(63, 63, 63);
+}
+
+.Character-sprite {
+  width: 32vw;
+}
+
+.Messages-area {
+  background-color: red;
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  margin-top: 70vh;
+}
+
+.Character-textbox {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+.Character-name {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+}
+
+.Character-name p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+  color: #553E13
+}
+
+.Character-name img {
+  width: 15vw;
+}
+
+.Character-message {
+  width: 100%;
+  min-height: 15vh;
+  background-color: #E4CC95;
+  border: solid;
+  border-width: 0.35vw 0 0 0;
+  border-color: #8d6623;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Character-message p {
+  width: 100%;
+  text-align: center;
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+  color: #553E13
+}
+
+
+.User-textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+  height: 15vh;
+  position: relative;
+}
+
+.User-textbox input {
+  width: 100vw;
+  text-align: center;
+  font-size: calc(5px + 1vw);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.User-textbox input:focus {
+  outline: none;
+}
+
+.User-textbox button {
+  width: 10vw;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-25%, -50%);
+  font-size: calc(5px + 1vw);
+  font-weight: bold;
+  background-color: #E4CC95;
+  border: 2px solid #8d6623;
+  border-width: 0.35vw;
+  border-radius: 30px;
+  color: #553E13;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.User-textbox button:hover {
+  background-color: #d6bb7b;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
